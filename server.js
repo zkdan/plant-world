@@ -34,7 +34,22 @@ router.route('/plants')
     });
   });
 
-
+router.route('/employees')
+  .get((req, res)=>{
+    Employee.find({}, (err, docs) =>{
+      if (err!== null){
+        res
+          .status(400)
+          .send({
+            error:err
+          });
+        return;
+      }
+      res
+        .status(200)
+        .send(docs);
+    });
+  });
 app.use(express.static('public'));
 
 app.listen(port);

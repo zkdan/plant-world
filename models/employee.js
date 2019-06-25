@@ -8,7 +8,6 @@ const EmployeeSchema = new Schema({
   favoritePlants: Array,
   leastFavoritePlants: Array,
   enemies: Array,
-  age: Number,
   microwavesFish: Boolean,
   wholeDeal:String
 });
