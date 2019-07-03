@@ -1,5 +1,7 @@
 .DS_Store
+public/.DS_Store
 node_modules
 .wakatime-project
 plants.json
 employees.json
+make-an-api.md
