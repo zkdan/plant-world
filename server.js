@@ -13,6 +13,7 @@ const router = express.Router();
 const Plant = require('./models/plant.js');
 const Employee = require('./models/employee.js');
 
+// should this be that 
 const dbURL = process.env.MONGODB_URI || 'mongodb://localhost/plants';
 
 mongoose.connect(dbURL);
