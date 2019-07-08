@@ -34,6 +34,16 @@ router.route('/plants')
         .send(docs);
     });
   });
+router.route('/trees')
+  .get((req, res) => {
+    res.json({ 'message': 'This is trees!' });
+  });
+
+router.route('/low-light')
+  .get((req, res) => {
+    res.json({ 'message': 'This is lowLight!' });
+  });
+
 
 router.route('/employees')
   .get((req, res)=>{
