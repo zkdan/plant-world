@@ -12,7 +12,6 @@ const Employee = require('./models/employee.js');
 
 
 mongoose.connect(dbURL);
-// app.use(bodyParser.json());
 
 router.route('/plants')
   .get((req,res) => {
