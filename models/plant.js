@@ -4,7 +4,8 @@ const Schema = mongoose.Schema;
 const PlantSchema = new Schema({
   name: String,
   lightRequirements: Array,
-  poisonousToPets: Boolean
+  poisonousToPets: Boolean,
+  type:'String'
 });
 
 // this is what this file exports
