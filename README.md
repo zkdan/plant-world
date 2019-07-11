@@ -1,12 +1,12 @@
 # Welcome to Plant World
 
-There are currently two endpoints.
+There are currently three endpoints.
 
 All plants:
-<http://plantworldca.herokuapp.com/api/v1/plants>
+<https://plantworldca.herokuapp.com/api/v1/plants>
 
 Plants by type:
-<http://plantworldca.herokuapp.com/api/v1/plants/plantType>
+<https://plantworldca.herokuapp.com/api/v1/plants/plantType>
 
 Your options for `plantType` are:
 `houseplant`
@@ -14,3 +14,7 @@ Your options for `plantType` are:
 `landscape`
 `cactus`
 `bush`
+
+A list of employees at the fictional Plant World Canada store:
+<https://plantworldca.herokuapp.com/api/v1/employees>
+
