@@ -3,6 +3,10 @@ public/.DS_Store
 node_modules
 .wakatime-project
 # plants.json
-*.json
+employees.json
+plants.json
+plant-format.json
 make-an-api.md
 make-an-api-notes.md
+plant-format.js
+floweringShrubs.json
