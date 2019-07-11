@@ -28,27 +28,10 @@ router.route('/plants')
         .send(docs);
     });
   });
-router.route('/plants/:chosenName')
-  .get((req, res) => {
-    const name = req.params.chosenName;
-    Plant.find({'name':name}, (err, docs) => {
-      if (err) {
-        res
-          .status(400)
-          .send({
-            error: err
-          });
-        return;
-      }
-      res
-        .status(200)
-        .send(docs);
-    });
-  });
 router.route('/plants/:kind')
   .get((req, res) => {
     const kind = req.params.kind;
-    Plant.find({ 'type': kind }, (err, docs) => {
+    Plant.find({ 'type': kind  }, (err, docs) => {
       if (err) {
         res
           .status(400)
