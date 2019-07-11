@@ -3,12 +3,17 @@ const Schema = mongoose.Schema;
 
 const PlantSchema = new Schema({
   name: String,
+  type: String,
+  stock: Number,
+  commonName: String,
+  botanicalName: String,
+  otherNames: Array,
+  varieties: Array,
   lightRequirements: Array,
+  water: String,
+  humidity: String,
   poisonousToPets: Boolean,
-  type:'String'
+  image: String
 });
 
-// this is what this file exports
-module.exports = mongoose
-// defines the model , retreives the Schema 
-  .model('Plant', PlantSchema);
+module.exports = mongoose.model('Plant', PlantSchema);
