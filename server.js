@@ -14,6 +14,7 @@ mongoose.connect(dbURL);
 
 router.route('/plants')
   .get((req,res) => {
+    res.header('Access-Control-Allow-Origin', '*');
     Plant.find({}, (err,docs) =>{
       if(err){
         res
@@ -30,6 +31,7 @@ router.route('/plants')
   });
 router.route('/plants/:kind')
   .get((req, res) => {
+    res.header('Access-Control-Allow-Origin', '*');
     const kind = req.params.kind;
     Plant.find({ 'type': kind  }, (err, docs) => {
       if (err) {
@@ -48,6 +50,7 @@ router.route('/plants/:kind')
 
 router.route('/employees')
   .get((req, res)=>{
+    res.header('Access-Control-Allow-Origin', '*');
     Employee.find({}, (err, docs) =>{
       if (err){
         res
